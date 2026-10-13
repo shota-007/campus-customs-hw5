@@ -1,0 +1,24 @@
+# secrets: never commit the real key
+.env
+.env.local
+*.local
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# SQLite side files (the .db files themselves ARE committed)
+*.db-wal
+*.db-shm
+*.db-journal
+
+# Node / build
+node_modules/
+frontend/dist/
+
+# misc
+output/*.tmp
+.DS_Store
+.claude/
+joke.txt
